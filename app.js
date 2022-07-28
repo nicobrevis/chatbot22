@@ -19,7 +19,13 @@ app.use(cors())
 app.use(express.json())
 const MULTI_DEVICE = process.env.MULTI_DEVICE || 'true';
 const server = require('http').Server(app)
-
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+}
 const port = process.env.PORT || 3000
 var client;
 app.use('/', require('./routes/web'))
@@ -58,7 +64,8 @@ const listenMessage = () => client.on('message', async msg => {
     if (process.env.DATABASE === 'dialogflow') {
         if(!message.length) return;
         const response = await bothResponse(message);
-        await sendMessage(client, from, response.replyMessage);
+        await sendMessage(client, from, response.replyMessage, message);
+        
         if (response.media) {
             sendMedia(client, from, response.media);
         }
@@ -169,4 +176,3 @@ server.listen(port, () => {
     console.log(`El server esta listo por el puerto ${port}`);
 })
 checkEnvFile();
-

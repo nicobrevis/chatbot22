@@ -49,14 +49,14 @@ const detectIntent = async (queryText) => {
     const [singleResponse] = responses;
     const { queryResult } = singleResponse
     const { intent } = queryResult || { intent: {} }
-    const parseIntent = intent['displayName'] || null
+    //const parseIntent = intent['displayName'] || null
     const parsePayload = queryResult['fulfillmentMessages'].find((a) => a.message === 'payload');
     // console.log(singleResponse)
     if (parsePayload && parsePayload.payload) {
         const { fields } = parsePayload.payload
         media = fields.media.stringValue || null
     }
-    const customPayload = parsePayload['payload']
+    //const customPayload = parsePayload['payload']
 
     const parseData = {
         replyMessage: queryResult.fulfillmentText,

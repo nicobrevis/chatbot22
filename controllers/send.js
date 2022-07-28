@@ -38,7 +38,13 @@ const sendMedia = (client, number, fileName) => {
         client.sendMessage(number, media ,{ sendAudioAsVoice: true });
     }
 }
-
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+}
 /**
  * Enviamos un mensaje simple (texto) a nuestro cliente
  * @param {*} number 
@@ -46,10 +52,13 @@ const sendMedia = (client, number, fileName) => {
 const sendMessage = async (client, number = null, text = null, trigger = null) => {
    setTimeout(async () => {
     number = cleanNumber(number)
+   
     const message = text
     client.sendMessage(number, message);
     await readChat(number, message, trigger)
+    
     console.log(`⚡⚡⚡ Enviando mensajes....`);
+    
    },DELAY_TIME)
 }
 

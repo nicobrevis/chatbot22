@@ -1,13 +1,12 @@
 {
-    "type": "",
-    "project_id": "",
-    "private_key_id": "",
-    "private_key":"",
-    "client_email": "",
-    "client_id": "",
-    "auth_uri": "",
-    "token_uri": "",
-    "auth_provider_x509_cert_url": "",
-    "client_x509_cert_url":""
-  }
-  
+  "type": "service_account",
+  "project_id": "smilesjumping-nxoj",
+  "private_key_id": "16392edcc2daa9f024628f653f2f74a88711ee83",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCLiCtZ6XbFHqtu\nYXFLpAjo9uPSdU9wp9VGcGiTw6VlCBmqGocFDO7PFUsos5R5rG4tKa2iIkngyVSB\nHWTjWIYiqU6ge2+CXt5XjFUuPlVc/6M5L+2scKQq9e15cREs6LJHO3kaQBVfCVN4\nQoh/YIm+IIcdumGYST5bjzQHvVrzn3312I81qj9wGe5y6roDgNKGnHgm5Z+ouhZR\nPDek2Yn9ubeELHv46C6YaUUXaRIfgmzOJ8IUVxEerhFTwPdQzu/sr9W8io4f5ReQ\nzbxFTYyXluDXSL5XI7Wzghl8vDgy4V8gu9z0mqJimApSW0tluzeuvq90sokLo6Bb\nh+BSJf37AgMBAAECggEAPlO4naSiR6IQDLHdNF8VFc827As3zYhCxgCvThYOOueX\n4zqPRmvE/t6xoIA7GfCylFzyMSLk4lK8eyJArycbX79GHnyUzmUHJ49Je2sfoXeV\nlxV4MtdsFb6d8enWNLvK6vO/gEDQ6w9U6Dq8Ez3xuWp5QIfBUY+iGa8JnE1yo7DZ\nZrS/Tz/r9N7dcEz8LAVpfiEwcNXlWRpsR+Q18wAuGbcPM07m/xVxtK/xO8IKrY8k\n5oA63Y+K0XfwlhGy9Wj5bOa+PZBLMjM08V3mdqpH/sfI3uGcMT7oOfiHw0g/FQ1l\nzUBT6FSj4eD//3Xt1qLjhvv83m/jB2JQ+Vd51+fF4QKBgQDA2xcvcVmy5rmRhXvk\ntVN4gKP9ciGnCxbG/NUujJIpAHlpgfdFy/ohz4Rq+iJewHsKy2jFZky0aDCFBLPd\n5XQSLrrmO6tyeuWRyB8SV0o+O5E5EPRdj/asEF7cvF/4t/NUY8LQqxRnOdYJ+tNh\nal14XEZh0tlFJ7LXP87RVDMP4QKBgQC5N4q/3jS9GS+4vf9UD7ZUjHf3Bsn1sexs\nAWxMAz321SDrmrrG98VL7O4WVFKGMvGETV+FZefDrbVYCEAsUf/8tn3aElG90BAU\nY6jCFjKTJChkj4aqGIYPYRlU7rUwMi6TWA1dfFuGINli04qu+Kl9NmUDc10IRk7V\nOQyOiT55WwKBgEPkHMpfzeLz5Dm9UvsVdjgCmThcmEo01iTg1q9XXxC+EP+6d/ED\nOJ/0bLo4KidO/UG0j8KGG9SapRH+sM8Zun24I6VvNhDMAMsMNxv+zK0RzTLYrB3P\n01eJP8vXKLXnE+sOX4OT5k/chWPn/8fYaOU5HrHLRx9YNVYfKVB5oqwhAoGAfnm+\n9WX2/WnFfJHBWNWh2/pPsQ+huXTVzKrsGLveBD9lS31NLbDjuQUBT54k/B6tbXqo\nT59Ws/habNK1f44/D4JOTitURhld4Y5sHpypzHBUZNbdTimQ4c+cTLL0ZwTdaSAn\ngD77AIxN5X4upWyH0EjkkYalcJESI+fg+zQcxSECgYBoGjtUQTiAhmoLWUX+xoKR\nY0CwG0aiHVZ4MZhPPQ17aNXX5a7bf5bX0ttb2mJc/Wv+3tbvQBWzslJaoALNvXEN\nhWFvEAz3Ol5Qk+QeH3/W4rL+pOJtQcTlRvExsLMpgcCKXcUnIRfmHsBSudKdPQlg\n+uDEV3++IMZJaavNT2Y3IQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "smilesjumping@smilesjumping-nxoj.iam.gserviceaccount.com",
+  "client_id": "117908809622941482759",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smilesjumping%40smilesjumping-nxoj.iam.gserviceaccount.com"
+}
