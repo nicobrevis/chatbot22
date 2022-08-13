@@ -6,6 +6,35 @@ const { MessageMedia, Buttons } = require('whatsapp-web.js');
 const { cleanNumber } = require('./handle')
 const DELAY_TIME = 170; //ms
 const DIR_MEDIA = `${__dirname}/../mediaSend`;
+const timeZoneOffset = '-04:00';
+const numeroDia = new Date().getDay();
+let date = new Date();
+let confirm = false;
+let hora = date.setHours(date.getHours() + parseInt(timeZoneOffset.split(':')[0]));
+
+if (numeroDia != 0){
+    if ((date.getHours()>=9) && (date.getHours()<=19)){
+        
+        confirm = false;
+    
+    }else{
+
+        confirm = true;    
+
+    }
+}else{
+    if ((date.getHours()>=10) && (date.getHours()<=14)){
+
+        confirm = false;
+    
+    }else{
+
+        confirm = true;    
+    }
+}
+
+
+
 // import { Low, JSONFile } from 'lowdb'
 // import { join } from 'path'
 const { saveMessage } = require('../adapter')
@@ -52,9 +81,14 @@ function sleep(milliseconds) {
 const sendMessage = async (client, number = null, text = null, trigger = null) => {
    setTimeout(async () => {
     number = cleanNumber(number)
-   
+    if (confirm == true){
+        console.log(`sexooooo`)
+        client.sendMessage(number, message);
+    }else{
+        console.log(`coito`)
+    }
     const message = text
-    client.sendMessage(number, message);
+    
     await readChat(number, message, trigger)
     
     console.log(`⚡⚡⚡ Enviando mensajes....`);
