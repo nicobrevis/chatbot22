@@ -63,7 +63,7 @@ const sendMessage = async (client, number = null, text = null, trigger = null) =
    setTimeout(async () => {
     number = cleanNumber(number)
     if (numeroDia != 0){
-        if ((date.getHours()>=9) && (date.getHours()<=10)){//19
+        if ((date.getHours()>=9) && (date.getHours()<=19)){//19
             
             confirm = false;
         
@@ -73,7 +73,7 @@ const sendMessage = async (client, number = null, text = null, trigger = null) =
     
         }
     }else{
-        if ((date.getHours()>=10) && (date.getHours()<=11)){//14
+        if ((date.getHours()>=10) && (date.getHours()<=14)){//14
     
             confirm = false;
         
