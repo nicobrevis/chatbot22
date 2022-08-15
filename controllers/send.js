@@ -12,26 +12,7 @@ let date = new Date();
 let confirm = false;
 let hora = date.setHours(date.getHours() + parseInt(timeZoneOffset.split(':')[0]));
 
-if (numeroDia != 0){
-    if ((date.getHours()>=9) && (date.getHours()<=19)){
-        
-        confirm = false;
-    
-    }else{
 
-        confirm = true;    
-
-    }
-}else{
-    if ((date.getHours()>=10) && (date.getHours()<=14)){
-
-        confirm = false;
-    
-    }else{
-
-        confirm = true;    
-    }
-}
 
 
 
@@ -81,13 +62,36 @@ function sleep(milliseconds) {
 const sendMessage = async (client, number = null, text = null, trigger = null) => {
    setTimeout(async () => {
     number = cleanNumber(number)
+    if (numeroDia != 0){
+        if ((date.getHours()>=9) && (date.getHours()<=19)){//19
+            
+            confirm = false;
+        
+        }else{
+    
+            confirm = true;    
+    
+        }
+    }else{
+        if ((date.getHours()>=10) && (date.getHours()<=14)){//14
+    
+            confirm = false;
+        
+        }else{
+    
+            confirm = true;    
+        }
+    }
+    console.log(`numerodia:`, numeroDia)
+    console.log(date.getHours())
+    const message = text
+    
     if (confirm == true){
         console.log(`sexooooo`)
-        client.sendMessage(number, message);
+        client.sendMessage(number, message)
     }else{
         console.log(`coito`)
     }
-    const message = text
     
     await readChat(number, message, trigger)
     
