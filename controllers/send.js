@@ -8,7 +8,7 @@ const DELAY_TIME = 170; //ms
 const DIR_MEDIA = `${__dirname}/../mediaSend`;
 const timeZoneOffset = '-04:00';
 const numeroDia = new Date().getDay();
-let date = new Date();
+
 let confirm = false;
 let hora = date.setHours(date.getHours() + parseInt(timeZoneOffset.split(':')[0]));
 
@@ -61,6 +61,7 @@ function sleep(milliseconds) {
  */
 const sendMessage = async (client, number = null, text = null, trigger = null) => {
    setTimeout(async () => {
+    let date = new Date();
     number = cleanNumber(number)
     if (numeroDia != 0){
         if ((date.getHours()>=9) && (date.getHours()<=19)){//19
