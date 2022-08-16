@@ -10,7 +10,7 @@ const timeZoneOffset = '-04:00';
 const numeroDia = new Date().getDay();
 
 let confirm = false;
-let hora = date.setHours(date.getHours() + parseInt(timeZoneOffset.split(':')[0]));
+// let hora = date.setHours(date.getHours() + parseInt(timeZoneOffset.split(':')[0]));
 
 
 
