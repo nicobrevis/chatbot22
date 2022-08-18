@@ -1,0 +1,38 @@
+{
+  "id": "1ae93de6-674a-48c8-9d57-58e3c9cad5ed-5a74d3f9",
+  "fulfillmentText": "Disculpe, no se a que se refiere ☹️\nEscriba el número *0* para ir al menú principal",
+  "language_code": "es",
+  "queryText": "1",
+  "webhookPayload": {},
+  "intentDetectionConfidence": 1,
+  "action": "input.unknown",
+  "webhookSource": "",
+  "parameters": {},
+  "fulfillmentMessages": [
+    {
+      "text": {
+        "text": [
+          "Disculpe, no se a que se refiere ☹️\nEscriba el número *0* para ir al menú principal"
+        ]
+      }
+    }
+  ],
+  "webhookStatus": {
+    "webhookUsed": false
+  },
+  "outputContexts": [
+    {
+      "lifespanCount": 1,
+      "name": "__system_counters__",
+      "parameters": {
+        "no-match": "1.0",
+        "no-input": "0.0"
+      }
+    }
+  ],
+  "intent": {
+    "isFallback": true,
+    "displayName": "Default Fallback Intent",
+    "id": "2b994320-1bed-44be-8560-0bccb0254985"
+  }
+}

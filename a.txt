@@ -1,0 +1,28 @@
+{
+  "id": "49ad38dd-12a6-4ee6-9534-6474b44e1433-5a74d3f9",
+  "fulfillmentText": "Todos nuestros productos están publicados en nuestra tienda online, con su precio, imagen y descripción.\nLas compras se realizan directamente en nuestra Página Web \n👇🏼👇🏼👇🏼\nhttps://www.smilesjumping.cl\n-Puede pagar con tarjetas de crédito, débito y transferencia electrónica.\n-Tenemos la opción de *Retiro en tienda* o *Despacho* por Blue Express-Correos Chile-Chilexpress o Starken.\n👇🏼\n*0*.- Para volver a Menú principal \nSi gusta, también puede indicar otra opción del menú anterior 😊",
+  "language_code": "es",
+  "queryText": "1",
+  "webhookPayload": {},
+  "intentDetectionConfidence": 1,
+  "action": "",
+  "webhookSource": "",
+  "parameters": {},
+  "fulfillmentMessages": [
+    {
+      "text": {
+        "text": [
+          "Todos nuestros productos están publicados en nuestra tienda online, con su precio, imagen y descripción.\nLas compras se realizan directamente en nuestra Página Web \n👇🏼👇🏼👇🏼\nhttps://www.smilesjumping.cl\n-Puede pagar con tarjetas de crédito, débito y transferencia electrónica.\n-Tenemos la opción de *Retiro en tienda* o *Despacho* por Blue Express-Correos Chile-Chilexpress o Starken.\n👇🏼\n*0*.- Para volver a Menú principal \nSi gusta, también puede indicar otra opción del menú anterior 😊"
+        ]
+      }
+    }
+  ],
+  "webhookStatus": {
+    "webhookUsed": false
+  },
+  "intent": {
+    "isFallback": false,
+    "displayName": "1",
+    "id": "b3eba17f-57c9-4cc0-a41c-511f3c9d49cb"
+  }
+}
