@@ -90,13 +90,13 @@ const sendMessage = async (client, number = null, text = null, trigger = null) =
     if (confirm == true){
         console.log(`sexooooo`)
         client.sendMessage(number, message)
+        await readChat(number, message, trigger)
+        console.log(`⚡⚡⚡ Enviando mensajes....`);
     }else{
         console.log(`coito`)
     }
     
-    await readChat(number, message, trigger)
     
-    console.log(`⚡⚡⚡ Enviando mensajes....`);
     
    },DELAY_TIME)
 }
